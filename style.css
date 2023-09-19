@@ -64,14 +64,12 @@ main .container{
 }
 
 .left {
-  width: 52rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .right {
-  width: 52rem;
   font-size: 2rem;
 }
 
@@ -154,7 +152,7 @@ main .container{
   main .container{
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction:column-reverse;
     padding-bottom: 2rem;
   }
   .guess{
@@ -166,10 +164,27 @@ main .container{
   }
 
   .right{
-    margin-top: 7rem;
+    margin-top: -4rem;
     max-width: 100%;
     display: grid;
     justify-content: center;
+    text-align: center;
     font-size: 1.5rem;
+  }
+  .message{
+    margin-bottom: 3rem;
+  }
+  .number{
+    font-size: 5rem;
+    width: 11rem;
+    padding: 3rem
+  }
+  .guess{
+    padding: 1rem;
+    max-width: 20rem;
+    font-size: 4rem;
+  }
+  .label-highscore{
+    margin-bottom: 5rem;
   }
 }
