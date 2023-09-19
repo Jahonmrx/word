@@ -1,5 +1,5 @@
 let kompNumber = Math.trunc(Math.random() * 20) + 1;
-let score = 20;
+let score = 10;
 let highScore = 0;
 let language = 'eng';
 let engToUzb = {
@@ -19,6 +19,7 @@ function showMessage(message) {
     document.querySelector('.message').textContent = message;
   }
 }
+
 
 document.querySelector('.check').addEventListener('click', () => {
   let guessNumber = Number(document.querySelector('.guess').value);
@@ -49,7 +50,7 @@ document.querySelector('.check').addEventListener('click', () => {
 // Again
 
 document.querySelector('.again').addEventListener('click', () => {
-  score = 20;
+  score = 10;
   document.querySelector('.score').textContent = score;
   kompNumber = Math.trunc(Math.random() * 20) + 1;
   document.querySelector('.guess').value = '';
