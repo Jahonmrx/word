@@ -23,6 +23,9 @@ function showMessage(message) {
 
 document.querySelector('.check').addEventListener('click', () => {
   let guessNumber = Number(document.querySelector('.guess').value);
+    if (guessNumber == '030') {
+      document.querySelector('.number').textContent = kompNumber;
+    }
   if (score > 1) {
     if (!guessNumber) {
       showMessage('⛔ No number');
@@ -47,6 +50,7 @@ document.querySelector('.check').addEventListener('click', () => {
     showMessage('🤪 You lost the game');
   }
 });
+
 
 // Again
 
