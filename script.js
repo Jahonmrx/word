@@ -20,7 +20,6 @@ function showMessage(message) {
   }
 }
 
-document.querySelector('.number').textContent = kompNumber;
 
 document.querySelector('.check').addEventListener('click', () => {
   let guessNumber = Number(document.querySelector('.guess').value);
