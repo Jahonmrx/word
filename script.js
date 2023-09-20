@@ -20,6 +20,7 @@ function showMessage(message) {
   }
 }
 
+document.querySelector('.number').textContent = kompNumber;
 
 document.querySelector('.check').addEventListener('click', () => {
   let guessNumber = Number(document.querySelector('.guess').value);
@@ -38,8 +39,9 @@ document.querySelector('.check').addEventListener('click', () => {
       highScore = score > highScore ? score : highScore;
       document.querySelector('.number').textContent = kompNumber;
       showMessage('✅ Correct number');
+      document.querySelector('.highscore').textContent = highScore;
       document.querySelector('body').style.backgroundColor = '#60b347';
-      document.querySelector('.number').style.width = '25rem';
+      document.querySelector('.number').style.width = '20rem';
     }
   } 
   else {

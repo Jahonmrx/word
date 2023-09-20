@@ -175,9 +175,10 @@ main .container{
     margin-bottom: 3rem;
   }
   .number{
-    font-size: 5rem;
+    font-size: 3rem;
     width: 11rem;
-    padding: 3rem
+    padding: 2rem;
+    transform: translateY(4rem);
   }
   .guess{
     padding: 1rem;
