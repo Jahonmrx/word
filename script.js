@@ -23,7 +23,7 @@ function showMessage(message) {
 
 document.querySelector('.check').addEventListener('click', () => {
   let guessNumber = Number(document.querySelector('.guess').value);
-    if (guessNumber == '030') {
+    if (guessNumber == '030') {   
       document.querySelector('.number').textContent = kompNumber;
     }
   if (score > 1) {
@@ -74,7 +74,7 @@ document.querySelector('.uzbek').addEventListener('click', () => {
   document.querySelector('.between').textContent = '(1 dan 20 gacha)';
   document.querySelector('h1').textContent = "O'ylagan sonimni top!";
   document.querySelector('.message').textContent = 'Topishni boshla...';
-  document.querySelector('.label-score').innerHTML = '💯 Imkon: <span class="score">20</span>';
+  document.querySelector('.label-score').innerHTML = '💯 Imkon: <span class="score">10</span>';
   document.querySelector('.label-highscore').innerHTML = '🥇 Rekord: <span class="highscore">0</span>';
   document.querySelector('.check').textContent = 'Tekshir';
 });
